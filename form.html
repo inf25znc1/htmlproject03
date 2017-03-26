@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form method="POST" action="https://formspree.io/inferno25znc@gmail.com">
+        <p>Hey!</p>
+        <p>Please take a few minutes to fill in the form below and this will <b><i>reise your karma</i></b>!</p>
+        <br>
+        <fieldset>
+        <legend>Personal information: </legend>
+        <br>
+        <br>
+        <label>First Name:
+            <br>
+            <input type="text" name="person-first-name" required placeholder="John"/>
+        </label>
+        <br>
+        <br>
+        <label>Last Name:
+            <br>
+            <input type="text" name="person-last-name" placeholder="Snow"/>
+        </label>
+        <br>
+        <br>
+        <label>Your E-mail:
+            <br>
+            <input type="email" name="email-addres" required placeholder="your.email@domain.com"/>
+        </label>
+        <br>
+        <br>
+        <label>Select your gender:
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other"> Did you just assume my gender?
+        </label>
+        <br>
+        <br>
+        <label>Your age:
+            <br>
+            <input type="text" name="age" pattern="[\d]{2}"/>
+        </label>
+        <br>
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>General questions: </legend>
+            <br>
+            <label>What kind of camera do you use?
+                <br>
+                <input type="checkbox" name="camera" value="canon" checked> Canon
+                <br>
+                <input type="checkbox" name="camera" value="nikon"> Nikon
+                <br>
+                <input type="checkbox" name="camera" value="sony"> Sony
+                <br>
+                <input type="checkbox" name="camera" value="pentax"> Pentax
+                <br>
+                <input type="checkbox" name="camera" value="other"> Other
+            </label>
+                <br>
+                <br>
+            <label>Do you use full frame camera?
+                <br>
+                <input type="radio" name="frame" value="yes" checked> Yes!
+                <br>
+                <input type="radio" name="frame" value="no"> No :(
+            </label>
+            <br>
+            <br>
+            <label>Prime or zoom lens?
+                <br>
+                <input type="radio" name="lens" value="prime" checked> Prime
+                <br>
+                <input type="radio" name="lens" value="zoom"> Zoom
+            </label>
+            <br>
+            <br>
+            <label>Your favorite lens?
+                <br>
+                <input type="text" name="lens"/>
+            </label>
+            <br>
+            <br>
+            <label>What inspires you the most?
+                <br>
+                <textarea name="inspiration"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" name="Submit"/>
+        <input type="reset" name="Reset"/>
+    </form>
+</body>
+</html>
